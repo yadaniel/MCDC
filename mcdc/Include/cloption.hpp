@@ -45,7 +45,7 @@
 // Options control the behaviour of the porgram. 
 // Mainly Output options are available
 
-// All output options are arganized in groups.
+// All output options are organized in groups.
 // There is the main option, which specifies the area of data that should be shown
 // The suboptions, denoted by a suffix, determine, where the data go to
 //

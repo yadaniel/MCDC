@@ -130,7 +130,8 @@ struct PrimeImplicantType
 // The prime imlicants will be stored in a std::set. This needs a compare function. Here we define the Functor for it
 struct PrimeImplicantTypeCompare
 {
-	bool operator() (const PrimeImplicantType& lhs, const PrimeImplicantType& rhs) noexcept
+	// bool operator() (const PrimeImplicantType& lhs, const PrimeImplicantType& rhs) noexcept
+	bool operator() (const PrimeImplicantType& lhs, const PrimeImplicantType& rhs) const noexcept
 	{
 		return ((lhs.term < rhs.term) || ((lhs.term == rhs.term) && (lhs.mask < rhs.mask)));
 	}
@@ -179,7 +180,8 @@ protected:
 	// Functor for sorting TableEntry in a vector
 	struct TableEntryCompare
 	{
-		bool operator() (const TableEntry& lhs, const TableEntry& rhs) noexcept
+		// bool operator() (const TableEntry& lhs, const TableEntry& rhs) noexcept
+		bool operator() (const TableEntry& lhs, const TableEntry& rhs) const noexcept
 		{
 			return (lhs.mintermLower < rhs.mintermLower) || ((lhs.mintermLower == rhs.mintermLower) && (lhs.mintermUpper < rhs.mintermUpper));
 		}
