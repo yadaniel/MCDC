@@ -1,3 +1,5 @@
+# JUST PORTED TO MSYS2
+
 # Evaluation of Boolean Expressions and MCDC test cases
 
 An application for gaining a better understanding of MCDC
